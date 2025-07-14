@@ -2,9 +2,50 @@
 
 **Learning objectives:**
 
-- THESE ARE NICE TO HAVE BUT NOT ABSOLUTELY NECESSARY
+- Introduce book chapters.
+- Understand the way the book is organized by sections. 
 
-## SLIDE 1 {-}
+## What is this book about? {-}
 
-- ADD SLIDES AS SECTIONS (`##`).
-- TRY TO KEEP THEM RELATIVELY SLIDE-LIKE; THESE ARE NOTES, NOT THE BOOK ITSELF.
+> "The book is meant as a guide to making visualizations that accurately reflect the data, tell a story, and look professional. It has grown out of my experience of working with students and postdocs in my laboratory on thousands of data visualizations.". 
+*Claus Wilke.*
+
+## Preface {-}
+
+- Github repo of the book https://github.com/clauswilke/dataviz. 
+- Figures will carry the weight of your arguments so they need to be clear, attractive, and convincing.
+
+## Preface {-}
+
+- Evolve your understanding of figure preparation. Try to routinely expose yourself to new approaches, and pay attention to the visual and design choices others make in their figures. 
+- Chapters have a logical progression but most chapters can stand on their own, so no need to read the book cover to cover.
+
+
+<a href="https://imgflip.com/i/9zwwan"><img src="https://i.imgflip.com/9zwwan.jpg" title="made at imgflip.com"/></a><div><a href="https://imgflip.com/memegenerator">from Imgflip Meme Generator</a></div>
+
+
+## Thoughts on graphing software and figure-preparation pipelines {-}
+
+- Automation is your friend. 
+- They should come out of the pipeline ready to be sent to the printer, no manual post-processing needed -> reproducibility. 
+- The visualizations can be generated with a few lines of R code via ggplot2 and readily available extension packages.
+
+## Introducion {-}
+
+- Data visualization is part art and part science. The challenge is to get the art right without getting the science wrong and viceversa. 
+- Principles of visual aesthetics. 
+- The book attempts to cover the key principles, methods, and concepts required to visualize data for publications, reports, or presentations.
+
+## How is the book divided? {-}
+
+- **Part 1 “From data to visualization”** describes different types of plots and charts and its primary emphasis is the science of visualization. 
+  - Group visualizations by the type of message they convey rather than by the type of data being visualized.
+- **Part 2 “Principles of figure design”** discusses various design issues and its primary but not exclusive emphasis is the aesthetic aspect of data visualization. 
+- **Part 3 “Miscellaneous topics”** discusses file formats commonly used to store images and plots,  provides thoughts about the choice of visualization software, and explains how to place individual figures into the context of a larger document.
+
+## Figures {-}
+
+- ugly—A figure that has aesthetic problems but otherwise is clear and informative.  
+- bad—A figure that has problems related to perception; it may be unclear, confusing, overly complicated, or deceiving.  
+- wrong—A figure that has problems related to mathematics; it is objectively incorrect.  
+
