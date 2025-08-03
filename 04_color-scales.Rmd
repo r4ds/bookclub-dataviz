@@ -2,9 +2,71 @@
 
 **Learning objectives:**
 
-- THESE ARE NICE TO HAVE BUT NOT ABSOLUTELY NECESSARY
+- Use color to distinguish groups of data from each other  
+- Use color to represent data values  
+- Use color to highlight 
 
-## SLIDE 1 {-}
 
-- ADD SLIDES AS SECTIONS (`##`).
-- TRY TO KEEP THEM RELATIVELY SLIDE-LIKE; THESE ARE NOTES, NOT THE BOOK ITSELF.
+## Color as a tool to distinguish {-}
+
+- Qualitative color scale: Color distinguish items or groups that are not ordered  
+  - finite set of distinct but equivalent colors
+  - no color stands out relative to others
+  - colors should not create the impression of order
+  
+![](images/fig4_1.png)
+
+**Example:** percent population growth from 2000 to 2010 in U.S. states.
+  - Coloring highlights: states in the same regions have experienced similar population growth.
+
+![](images/fig4_2.png)
+
+## Color to represent data values {-}
+
+- Colors can be used to represent data values: incomes, temperature, speed. 
+- Sequential color scale  
+- This sequence will indicate 
+  - which values are larger or smaller 
+  - color scale needs to be perceived to vary uniformly across range 
+  - how distant two specific values are from each other  
+  - may be based on a single hue (light blue to dark blue) or multiple hues (light yellow to dark red)
+  - multi-hue scales follow a color gradient that is considered "natural"
+  
+![](images/fig4_3.png)
+
+
+**Example:** choropleths. Map of annual median income within each county in Texas. 
+
+![](images/fig4_4.png)
+
+## Diverging Color Scales: midpoints {-}
+
+- two sequential scales stitched together at a common midpoint (light color)
+- visualize deviation of data values in one of two directions relative to a neutral midpoint. Eg. positive and negative values. 
+- balanced to indicate progression of colors in either direction is the same. Magnitude on either direction is the same. 
+
+![](images/fig4_5.png)
+
+**Example:** Percentage of people identifying as white in Texas counties. 
+  - 50% is a meaningful midpoint value  
+  
+  ![](images/fig4_6.png)
+
+## Color as a tool to highlight {-}
+
+- highlight specific categories or values in data with color  
+- by emphasizing relevant figure elements we can strngthen the story 
+- color set that has certain colors that vividly stand out against the rest
+- accent color scales
+- baseline colors must not compete for attention and instead support the accent color  
+- When in doubt, make baseline colors gray 
+
+
+![](images/fig4_7.png)
+
+**Example:** Variant of figure 2 to highlight two specific states: Texas and Louisiana. 
+
+![](images/fig4_8.png)
+
+
+![](images/fig4_9.png)

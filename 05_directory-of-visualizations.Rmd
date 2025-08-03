@@ -2,9 +2,45 @@
 
 **Learning objectives:**
 
-- THESE ARE NICE TO HAVE BUT NOT ABSOLUTELY NECESSARY
+- Quick visual overview of various plots and charts commonly used.
 
-## SLIDE 1 {-}
+## Amounts {-}
 
-- ADD SLIDES AS SECTIONS (`##`).
-- TRY TO KEEP THEM RELATIVELY SLIDE-LIKE; THESE ARE NOTES, NOT THE BOOK ITSELF.
+![](images/fig4_10.png)
+
+![](images/fig4_11.png)
+
+## Distributions {-}
+
+![](images/fig4_12.png)
+
+![](images/fig4_13.png)
+
+## Proportions {-}
+
+![](images/fig4_14.png)
+
+![](images/fig4_15.png)
+
+![](images/fig4_16.png)
+
+## x-y relationships {-}
+
+![](images/fig4_17.png)
+
+![](images/fig4_18.png)
+
+![](images/fig4_19.png)
+
+## Geospatial data {-}
+
+![](images/fig4_20.png)
+
+## Uncertainty {-}
+
+![](images/fig4_21.png)
+
+
+![](images/fig4_22.png)
+
+![](images/fig4_23.png)
