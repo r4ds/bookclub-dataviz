@@ -9,6 +9,10 @@ Depends:
     R (>= 3.1.0)
 Imports: 
     bookdown,
+    dplyr
+ ,
+    forcats,
     ggplot2,
-    rmarkdown
+    rmarkdown,
+    stringr
 Encoding: UTF-8
