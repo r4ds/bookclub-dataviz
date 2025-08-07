@@ -1,4 +1,5 @@
 Package: bookclub-dataviz
+Type: Book
 Title: Fundamentals of Data Visualization Book Club
 Version: 0.0.1
 Authors@R: 
@@ -9,6 +10,14 @@ Depends:
     R (>= 3.1.0)
 Imports: 
     bookdown,
+    colorspace,
+    cowplot,
+    dplyr,
+    forcats,
     ggplot2,
-    rmarkdown
+    ggridges,
+    rmarkdown,
+    Stat2Data,
+    stringr,
+    utils
 Encoding: UTF-8

@@ -1,10 +1,130 @@
 # Visualizing distributions: Histograms and density plots
 
-**Learning objectives:**
 
-- THESE ARE NICE TO HAVE BUT NOT ABSOLUTELY NECESSARY
+## 7.1 Visualizing a single distribution {-}
 
-## SLIDE 1 {-}
+- Histograms are useful in visualizing distributions
 
-- ADD SLIDES AS SECTIONS (`##`).
-- TRY TO KEEP THEM RELATIVELY SLIDE-LIKE; THESE ARE NOTES, NOT THE BOOK ITSELF.
+- Basically turning a quantitative variable into a qualitative variable via binning
+
+- Choice of how large each bin should be affects interpretation 
+
+- Density plots are similar to histograms but have important caveats: 
+
+    - The kernel choice (e.g. Gaussian, rectangular) should make sense given your knowledge of the distribution 
+
+    - May be misleading for discrete quantitative variables (e.g. counts)
+
+    - Suggests data exists where none exists 
+
+![](images/fig7_1.png)
+
+![](images/fig7_3.png)
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+library(dplyr)
+library(ggplot2)
+library(ggridges)
+
+data(Titanic, package = "Stat2Data")
+
+Titanic |>
+  select(-SexCode) |>
+  rename(
+    name = Name,
+    class = PClass,
+    age = Age,
+    sex = Sex,
+    survived = Survived
+  ) |>
+  mutate(
+    name = as.character(name),
+    class = as.character(class),
+    sex = as.character(sex)
+  ) -> titanic_all
+
+titanic <- titanic_all
+age_counts <- hist(titanic$age, breaks = (0:15) * 5 + .01, plot = FALSE)$counts
+age_hist <- data.frame(
+  `age range` = c(
+    "0--5",
+    "6--10",
+    "11--15",
+    "16--20",
+    "21--25",
+    "26--30",
+    "31--35",
+    "36--40",
+    "41--45",
+    "46--50",
+    "51--55",
+    "56--60",
+    "61--65",
+    "66--70",
+    "71--75"
+  ),
+  count = age_counts,
+  check.names = FALSE
+)
+
+dviz_font_family <- "Myriad Pro"
+
+theme_dviz_hgrid <- function(
+  font_size = 14,
+  font_family = dviz_font_family,
+  line_size = .5,
+  rel_small = 12 / 14,
+  rel_tiny = 11 / 14,
+  rel_large = 16 / 14,
+  colour = "grey90"
+) {
+  half_line <- font_size / 2
+
+  cowplot::theme_minimal_hgrid(
+    font_size = font_size,
+    font_family = font_family,
+    line_size = line_size,
+    rel_small = rel_small,
+    rel_tiny = rel_tiny,
+    rel_large = rel_large,
+    colour = colour
+  ) %+replace%
+    theme(
+      plot.margin = margin(half_line / 2, 1.5, half_line / 2, 1.5),
+      complete = TRUE
+    )
+}
+
+ggplot(titanic, aes(x = age)) +
+  geom_density_line(
+    fill = "#56B4E9",
+    color = colorspace::darken("#56B4E9", 0.5),
+    bw = 2,
+    kernel = "gaussian"
+  ) +
+  scale_y_continuous(limits = c(0, 0.046), expand = c(0, 0), name = "density") +
+  scale_x_continuous(
+    name = "age (years)",
+    limits = c(0, 75),
+    expand = c(0, 0)
+  ) +
+  ggplot2::geom_rug() +
+  coord_cartesian(clip = "off") +
+  theme_dviz_hgrid() +
+  theme(
+    axis.line.x = element_blank(),
+    plot.margin = margin(3, 7, 3, 1.5)
+  )
+```
+
+## 7.2 Visualizing multiple distributions at the same time {-}
+
+- Comparing distributions via multiple histograms can be challenging (but facetting might be the most appropriate approach). 
+
+- Comparing distributions via multiple density plots is typically better
+
+![](images/fig7_11.png)
