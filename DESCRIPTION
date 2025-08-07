@@ -10,6 +10,7 @@ Depends:
     R (>= 3.1.0)
 Imports: 
     bookdown,
+    colorspace,
     cowplot,
     dplyr,
     forcats,
@@ -17,5 +18,6 @@ Imports:
     ggridges,
     rmarkdown,
     Stat2Data,
-    stringr
+    stringr,
+    utils
 Encoding: UTF-8
