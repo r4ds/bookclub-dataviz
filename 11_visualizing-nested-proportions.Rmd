@@ -65,7 +65,7 @@ Problems:
 
 ![](https://clauswilke.com/dataviz/nested_proportions_files/figure-html/bridges-parallel-sets1-1.png)
 
-## Other strategies
+## Other strategies {-}
 
 - Sunburst
 - Coxcomb / Nightingale
