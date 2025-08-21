@@ -1,10 +1,116 @@
 # Visualizing nested proportions
 
-**Learning objectives:**
+## Nested proportions {-}
 
-- THESE ARE NICE TO HAVE BUT NOT ABSOLUTELY NECESSARY
+![](https://upload.wikimedia.org/wikipedia/commons/4/41/Floral_matryoshka_set_2_smallest_doll_nested.JPG)
 
-## SLIDE 1 {-}
+By <a href="//commons.wikimedia.org/wiki/User:BrokenSphere" title="User:BrokenSphere">BrokenSphere</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=3773186">Link</a>
 
-- ADD SLIDES AS SECTIONS (`##`).
-- TRY TO KEEP THEM RELATIVELY SLIDE-LIKE; THESE ARE NOTES, NOT THE BOOK ITSELF.
+Part of a whole, broken down into parts of that part, etc.
+
+For example: percent of households in the country with access to electricity, by region and by urban/rural
+
+## _Caveat visualizator_ {-}
+
+A naïve attempt to use the strategies from the previous chapter won't work:
+
+- If one sums the % of each group, it sums to more than 100%.
+- Because each visualized category to multiple groups (e.g., bridge era and bridge material)
+
+![](https://clauswilke.com/dataviz/nested_proportions_files/figure-html/bridges-bars-bad-1.png)
+
+## What may work {-}
+
+- Mosaic plots / treemaps
+- Nested pies
+- Parallel sets
+
+## Mosiac plots {-}
+
+Each area belongs to two or more groups.
+
+In the example below, each bridge is both part of a era group (crafts, emerging, mature, modern) and a material group (wood, iron, steel)
+
+![](https://clauswilke.com/dataviz/nested_proportions_files/figure-html/bridges-treemap-1.png)
+
+## Treemaps {-}
+
+Each child group belongs to one parent group.
+
+For the example below, each state belongs to one and only one region.
+
+![](https://clauswilke.com/dataviz/nested_proportions_files/figure-html/US-states-treemap-1.png)
+
+## Problems of mosaic / treemaps {-}
+
+Gets visually busy very fast
+
+Hard to judge size, among other reasons, because of the different shapes of groups
+
+## Nested pie {-}
+
+How:
+
+- Make combination of groups is a slice of the pie.
+- Use colors and color scales to telegraph which slice belongs to which bigger group
+
+Problems:
+
+- Radial area problem
+- Readability declines with the number of slices
+
+![](https://clauswilke.com/dataviz/nested_proportions_files/figure-html/bridges-nested-pie2-1.png)
+
+## Parallel sets {-}
+
+![](https://clauswilke.com/dataviz/nested_proportions_files/figure-html/bridges-parallel-sets1-1.png)
+
+## Other strategies
+
+- Sunburst
+- Coxcomb / Nightingale
+- Multiple charts: overview; selective drill-down
+- Interactive drill-down
+
+## Sunburst {-}
+
+### Fixed length {-}
+
+Aka radial treemap (?)
+
+- Inner ring: % of group level 1
+- Outer ring: % of group level 2 within level 1
+
+![](https://www.pipinghotdata.com/posts/2021-06-01-custom-interactive-sunbursts-with-ggplot-in-r/custom-interactive-sunbursts-with-ggplot-in-r_files/figure-html5/unnamed-chunk-14-1.png)
+
+### Varying length {-}
+
+Length of bars: another attribute within the second level--in the case below, median salary.
+
+![](https://www.pipinghotdata.com/posts/2021-06-01-custom-interactive-sunbursts-with-ggplot-in-r/custom-interactive-sunbursts-with-ggplot-in-r_files/figure-html5/unnamed-chunk-13-1.png)
+
+### Nice resources {-}
+
+- [Overview](https://www.data-to-viz.com/graph/sunburst.html)
+- [Extended worked example](https://www.pipinghotdata.com/posts/2021-06-01-custom-interactive-sunbursts-with-ggplot-in-r/)
+- [R package](https://sachijay.github.io/ggsunburst/index.html)
+
+## Coxcomb / Nightingale {-}
+
+![](https://upload.wikimedia.org/wikipedia/commons/1/17/Nightingale-mortality.jpg)
+
+Cause of death
+
+- Blue: preventable disease
+- Red: wounds
+- Black: all other causes
+
+## Multiple charts: overview; selective drill-down {-}
+
+Just imagine there was drill-down into one category
+
+![](images/hhsize_by_region_and_by_sector.png)
+
+## Interactive drill-down {-}
+
+See [here](https://quarto.org/docs/interactive/ojs/index.html#example).
