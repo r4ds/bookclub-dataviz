@@ -1,10 +1,52 @@
 # Coordinate systems and axes
 
-**Learning objectives:**
+## Coordinates in real life {-}
 
-- THESE ARE NICE TO HAVE BUT NOT ABSOLUTELY NECESSARY
+System for placing **things** in space.
 
-## SLIDE 1 {-}
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Modern_Fianchetto_Setup._Chess_game_Staunton_No._6.jpg/960px-Modern_Fianchetto_Setup._Chess_game_Staunton_No._6.jpg)
 
-- ADD SLIDES AS SECTIONS (`##`).
-- TRY TO KEEP THEM RELATIVELY SLIDE-LIKE; THESE ARE NOTES, NOT THE BOOK ITSELF.
+- Chess board ♟️
+- [Battleship](https://en.wikipedia.org/wiki/Battleship_(game)) 🚢
+- GPS 📍
+
+## Coordinates in data viz {-}
+
+System for placing **data** in space
+
+![](assets/locate_data_in_space.svg)
+
+## Cartesian coordinates {-}
+
+![](https://clauswilke.com/dataviz/coordinate_systems_axes_files/figure-html/cartesian-coord-1.png)
+
+## Coordinates for curved axes {-}
+
+![](https://clauswilke.com/dataviz/coordinate_systems_axes_files/figure-html/polar-coord-1.png)
+
+## Polar coordinates {-}
+
+![](https://clauswilke.com/dataviz/coordinate_systems_axes_files/figure-html/temperature-normals-polar-1.png)
+
+## Geospatial {-}
+
+![](https://clauswilke.com/dataviz/coordinate_systems_axes_files/figure-html/worldmap-four-projections-1.png)
+
+## Axes {-}
+
+![](assets/axes_as_units.svg)
+
+For purposes of this chapter, axes:
+
+- Communicate data units (scale)
+- Provide axis ticks that
+  - Place data in visual space
+  - Translate numbers into visual distance
+
+More practical information on axes later ([here](https://clauswilke.com/dataviz/figure-titles-captions.html#axis-and-legend-titles))
+
+## Scale {-}
+
+Does this belong here?
+
+![](https://clauswilke.com/dataviz/coordinate_systems_axes_files/figure-html/linear-log-scales-1.png)
