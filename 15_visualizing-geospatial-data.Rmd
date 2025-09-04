@@ -2,9 +2,67 @@
 
 **Learning objectives:**
 
-- THESE ARE NICE TO HAVE BUT NOT ABSOLUTELY NECESSARY
+- Understand key concepts in geospatial data viz, including:
+    - Datums
+    - Projections / Coordinate reference systems 
 
-## SLIDE 1 {-}
+- Identify choropleth maps and their variants
 
-- ADD SLIDES AS SECTIONS (`##`).
-- TRY TO KEEP THEM RELATIVELY SLIDE-LIKE; THESE ARE NOTES, NOT THE BOOK ITSELF.
+## The earth as an oblate elipsoid {-}
+
+- The earth isn't a perfect sphere - it's squished at the poles and bulging at the equator
+
+- The earth's size and shape is modelled by datums like WGS84
+
+- Other datums exist for specific uses (ITRS/ITRF, high-precision), NAD83 for North America, etc.
+
+## Projections {-}
+
+- Projections convert the 3D surface of the earth to a 2D image 
+
+- All projections sacrifice something - size, shape, or both. 
+
+- Projections that preserve size are called equal-area and those that preserve shape are conformal
+
+- Various types of the same basic projection exist (e.g. Albers projection focused on specific countries, states, provinces, etc.)
+
+- Choose a projection that makes sense for your area of interest
+
+
+## Layers {-}
+
+- Base layers (terrain, elevation, streemap, etc.) (See https://leaflet-extras.github.io/leaflet-providers/preview/)
+
+- Geometry layers (polygons, lines, or points)
+
+- Raster layers
+
+- Text layers 
+
+![](images/fig15_9.png) 
+
+- NB: Scale bars aren't accurate when using conformal projections (i.e. size is sacrified) across large latitudinal spans
+
+## Choropleth mapping {-}
+
+- Use colour to show intensity of a value per geometry polygon 
+
+- Darker colours represent higher intensities of the value 
+
+![](images/fig15_11.png) 
+
+- The inverse applies if the map is viewed on a dark background 
+
+![](images/fig15_12.png) 
+
+- Use discrete colour scales 
+
+![](images/fig15_13.png) 
+
+## Cartograms {-}
+
+![](images/fig15_15.png) 
+
+![](images/fig15_16.png) 
+
+![](images/fig15_17.png) 
