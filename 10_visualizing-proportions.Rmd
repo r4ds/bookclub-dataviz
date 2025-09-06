@@ -1,10 +1,129 @@
 # Visualizing proportions
 
-**Learning objectives:**
+## How to plot percentages: it depends {-}
 
-- THESE ARE NICE TO HAVE BUT NOT ABSOLUTELY NECESSARY
+> Many authors categorically reject pie charts and argue in favor of side-by-side or stacked bars. Others defend the use of pie charts in some applications. My own opinion is that none of these visualizations is consistently superior over any other. **Depending on the features of the dataset and the specific story you want to tell, you may want to favor one or the other approach.**
 
-## SLIDE 1 {-}
+## Pie {-}
 
-- ADD SLIDES AS SECTIONS (`##`).
-- TRY TO KEEP THEM RELATIVELY SLIDE-LIKE; THESE ARE NOTES, NOT THE BOOK ITSELF.
+### Where it works {-}
+
+![](https://clauswilke.com/dataviz/visualizing_proportions_files/figure-html/bundestag-pie-1.png)
+
+- Few groups
+- Simple fractions
+- Perceptually obvious pattern
+
+## Where it fails {-}
+
+![](images/packed_pie.png)
+
+- More groups
+- Perceptual problems with radial area
+- Ranking groups (due to percetual problems)
+
+## Other viz strategies {-}
+
+#### Stacked bar {-}
+
+![](https://clauswilke.com/dataviz/visualizing_proportions_files/figure-html/bundestag-stacked-bars-1.png)
+
+#### Side-by-side bar {-}
+
+![](https://clauswilke.com/dataviz/visualizing_proportions_files/figure-html/bundestag-bars-side-by-side-1.png)
+
+**Good:**
+
+Relative comparisons:
+
+- Magnitude
+- Ranking
+
+**Bad:**
+
+Comparison of part to the whole
+
+##  Waffle {-}
+
+![](https://assets.publishing.service.gov.uk/media/634e9eeed3bf7f6186e6bd44/9.png)
+
+Source: https://www.gov.uk/government/publications/a-bite-sized-guide-to-visualising-data-a-dstl-biscuit-book/a-bite-sized-guide-to-visualising-data
+
+- Equally sweet when pie charts are
+- But overcomes the radial area problem
+
+## Side-by-side bars {-}
+
+#### Less bad than the alternatives {-}
+
+Cannot measure pie slices--neither at one time nor over time
+
+![](https://clauswilke.com/dataviz/visualizing_proportions_files/figure-html/marketshare-pies-1.png)
+
+Cannot easily measure relative sizes of bars (although trend over time is clearer)
+
+![](https://clauswilke.com/dataviz/visualizing_proportions_files/figure-html/marketshare-stacked-1.png)
+
+## Where it works {-}
+
+![](https://clauswilke.com/dataviz/visualizing_proportions_files/figure-html/marketshare-side-by-side-1.png)
+
+- Many groups
+- Comparisons both witin a time period and across time periods
+
+## But could it be made better? {-}
+
+Group by company rather than time
+
+![](images/differently_grouped_bars.png)
+
+Use a line rather than bars
+
+![](images/grouped_bar_as_lines.png)
+
+## Stacked bars {-}
+
+![](https://clauswilke.com/dataviz/visualizing_proportions_files/figure-html/women-parliament-1.png)
+
+When:
+
+- few--ideally two--groups
+- (line showing majority)
+
+## Stacked densities {-}
+
+![](https://clauswilke.com/dataviz/visualizing_proportions_files/figure-html/health-vs-age-1.png)
+
+When
+
+- x axis represents a continuous variable
+- few groups
+
+Since "[s]tacked densities can be thought of as the limiting case of infinitely many infinitely small stacked bars arranged side-by-side", they have suffer from a similar problem:
+
+- Judging relative proportion of groups over time (where magnitude changes are not obvious)
+
+When not:
+
+- Focus on absolute numbers
+
+## Percentages separately as parts of a whole {-}
+
+### Group count compared to total count {-}
+
+![](https://clauswilke.com/dataviz/visualizing_proportions_files/figure-html/marital-vs-age-facets-1.png)
+
+Works well:
+
+- Part of whole (via "perceptual percentage")
+- Trend over time
+
+Some shortfalls:
+
+- Measuring relative size of proportion is imprecise and impressionistic
+- Comparing across groups for time T involves lots of looking back and forth (better if facets in single column?)
+- Doesn't actually display a proper %
+
+### Relative percentages {-}
+
+![](https://clauswilke.com/dataviz/visualizing_proportions_files/figure-html/marital-vs-age-proportions-1.png)
