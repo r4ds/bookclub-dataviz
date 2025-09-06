@@ -14,7 +14,7 @@
 - Simple fractions
 - Perceptually obvious pattern
 
-### Where it fails {-}
+## Where it fails {-}
 
 ![](images/packed_pie.png)
 
@@ -22,7 +22,7 @@
 - Perceptual problems with radial area
 - Ranking groups (due to percetual problems)
 
-### Other viz strategies {-}
+## Other viz strategies {-}
 
 #### Stacked bar {-}
 
@@ -43,7 +43,7 @@ Relative comparisons:
 
 Comparison of part to the whole
 
-####  Waffle {-}
+##  Waffle {-}
 
 ![](https://assets.publishing.service.gov.uk/media/634e9eeed3bf7f6186e6bd44/9.png)
 
@@ -64,14 +64,14 @@ Cannot easily measure relative sizes of bars (although trend over time is cleare
 
 ![](https://clauswilke.com/dataviz/visualizing_proportions_files/figure-html/marketshare-stacked-1.png)
 
-#### Where it works {-}
+## Where it works {-}
 
 ![](https://clauswilke.com/dataviz/visualizing_proportions_files/figure-html/marketshare-side-by-side-1.png)
 
 - Many groups
 - Comparisons both witin a time period and across time periods
 
-#### But could it be made better? {-}
+## But could it be made better? {-}
 
 Group by company rather than time
 
@@ -81,9 +81,7 @@ Use a line rather than bars
 
 ![](images/grouped_bar_as_lines.png)
 
-## Stacked bars and stacked densities {-}
-
-### Stacked bars {-}
+## Stacked bars {-}
 
 ![](https://clauswilke.com/dataviz/visualizing_proportions_files/figure-html/women-parliament-1.png)
 
@@ -92,7 +90,7 @@ When:
 - few--ideally two--groups
 - (line showing majority)
 
-### Stacked densities {-}
+## Stacked densities {-}
 
 ![](https://clauswilke.com/dataviz/visualizing_proportions_files/figure-html/health-vs-age-1.png)
 
