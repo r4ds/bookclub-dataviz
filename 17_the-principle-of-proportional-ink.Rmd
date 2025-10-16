@@ -38,9 +38,12 @@
 - On a linear scale, bar/rectangle areas are proportional to data values.
 - On a logarithmic scale, this proportionality is lost because axis spacing isn’t linear.
 - As an example, consider the gross domestic products (GDPs) of countries in Oceania. In 2007, these varied from less than a billion U.S. dollars (USD) to over 300 billion USD. 
-  - Visualizing these numbers on a linear scale would not work, because the two countries with the largest     GDPs (New Zealand and Australia) would dominate the figure.  
+  - Visualizing these numbers on a linear scale would not work, because the two countries with the largest GDPs (New Zealand and Australia) would dominate the figure.  
 
 ![](images/fig17_07.png)
+
+
+## Working with log scales that do not work {-}
 
 - However, the visualization with bars on a log scale does not work either. The bars start at an arbitrary value of 0.3 billion USD, and at a minimum the figure suffers from the same problem, that the bar lengths are not representative of the data values. 
 
@@ -50,6 +53,7 @@
 
 ![](images/fig17_09.png)
 
+## How to properly work with log scales in bar plots {-}
 
 - A log scale is the natural scale to visualize ratios, because a unit step along a log scale corresponds to multiplication with or division by a constant factor. 
 - When bars are drawn on a log scale, they represent ratios and need to be drawn starting from 1, not 0.
@@ -61,12 +65,16 @@
 ## Direct area visualization {-}
 
 - Pie charts follow the principle of proportional ink because wedge area (via angle) is proportional to the data value.
-- However, people perceive pie chart areas differently than bar chart areas.
-- Human perception is tuned to judge distances more accurately than areas.
-- A bar encodes a value as a single distance (length), making it easier to read precisely.
 - A pie wedge encodes a value as a combination of distances forming an area, which reduces accuracy.
 
 ![](images/fig17_11.png)
+
+
+## Direct area visualiztion in bar graphs {-}
+
+- However, people perceive pie chart areas differently than bar chart areas.
+- Human perception is tuned to judge distances more accurately than areas.
+- A bar encodes a value as a single distance (length), making it easier to read precisely.
 
 ![](images/fig17_12.png)
 
