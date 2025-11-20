@@ -4,7 +4,56 @@
 
 - THESE ARE NICE TO HAVE BUT NOT ABSOLUTELY NECESSARY
 
-## SLIDE 1 {-}
+## What is a story {-}
 
-- ADD SLIDES AS SECTIONS (`##`).
-- TRY TO KEEP THEM RELATIVELY SLIDE-LIKE; THESE ARE NOTES, NOT THE BOOK ITSELF.
+- Humans are naturally drawn to stories 
+
+- We make stories up even where none-exist 
+
+- Think about story frameworks: 
+
+    - Lead–Development–Resolution
+    - Lead-Development
+    - Action–Background–Development–Climax–Ending
+
+- Stories are critical as figures are not objective 
+
+- Individual plots can be steps in your story!
+
+## Make a figure for the generals {-}
+
+- Use simpler graphics as much as possible
+
+- Interpreting complex visuals is hard and takes time
+
+- Simple graphics are more engaging and less likely to be misinterpreted
+
+## Build up towards complex figures {-}
+
+- Don't show a complex figure all at once
+
+- Reveal the figure components iteratively
+
+- Especially true for small-multiple graphics, but applicable even for a single plot
+
+- Mostly applicable in presentations, scrollytelling, etc.
+
+- Hard to do for a single-graphic post (e.g. to social media)
+
+## Make your figures memorable {-}
+
+- Humans have a hard time distinguishing between figures that look the same
+
+- Try to make individual figures in a larger set memorable
+
+- Consider using isotype graphics
+
+## Be consistent but don’t be repetitive {-}
+
+- Don't make a set of figures that all look the same 
+
+- Consider switching up the chart type
+
+- Consider visualizing raw and derived variables
+
+
