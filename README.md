@@ -11,7 +11,7 @@ As we read, we are producing [notes about the book](https://dslc.io/dataviz).
 
 If you would like to present, please see the sign-up sheet for your cohort (linked below, and pinned in the [#book_club-dataviz](https://dslcio.slack.com/archives/C08S3TE9KEJ) channel on Slack)!
 
-- [Cohort 1](https://docs.google.com/spreadsheets/d/168epgsOUMyHxcvjWAYk1fTgHGYQKmt7BEz5cTW3TedA/edit?usp=sharing) (started 2025-07-10, facilitated by Gabby Palomo): [Thursdays, 2:00 PM CST/CDT](https://www.timeanddate.com/worldclock/converter.html?iso=20250710T200000&p1=24&p2=1440) | [meeting videos](https://www.youtube.com/playlist?list=PL3x6DOfs2NGhwcrkZT_8iZjftcvWj1-iE)
+- Cohort 1 (started 2025-07-10, finished 2025-11-20): [meeting videos](https://www.youtube.com/playlist?list=PL3x6DOfs2NGhwcrkZT_8iZjftcvWj1-iE)
 
 <hr>
 
