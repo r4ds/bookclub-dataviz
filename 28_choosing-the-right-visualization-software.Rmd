@@ -2,9 +2,39 @@
 
 **Learning objectives:**
 
-- THESE ARE NICE TO HAVE BUT NOT ABSOLUTELY NECESSARY
+- Identify some considerations for which visualization software is right for you
 
-## SLIDE 1 {-}
+## Choosing the right visualization software {-}
 
-- ADD SLIDES AS SECTIONS (`##`).
-- TRY TO KEEP THEM RELATIVELY SLIDE-LIKE; THESE ARE NOTES, NOT THE BOOK ITSELF.
+- Using the tool you know _may_ be best 
+
+- Learning new tools entails a learning curve 
+
+- There's always a pull to learn the latest tool
+
+## Reproducibility and repeatability {-}
+
+- Favour tools that allow for repeatability 
+
+- Reproducibility
+  - Are the data available? 
+  - Are transformations specified? 
+
+- Repeatability 
+  - Identical down to the pixel
+
+## Data exploration versus data presentation {-}
+
+- Favour tools that allow for fast and easy exploration 
+
+- Favour tools that allow for repeatable presentation 
+
+- If you need to manually modify a graphic for presentation, do so without reservation, but be aware that recreating the visual will be harder. 
+
+## Separation of content and design {-}
+
+- Favour tools that separate content and design
+
+- Content and design require different skills
+
+- Tools that separate content from design are easier to incrementally tweak 
